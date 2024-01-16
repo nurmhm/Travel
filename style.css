@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish';
+   
+}
+
+section{
+    margin: 140px 100px 100px 100px;
+}
+
+
+/* Banner Section start */
+.banner-container{
+    position: relative;
+    background: url(Images/Group\ 13\ \(1\)\ \(1\).png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 16px;
+    
+}
+.banner-element{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-element > h3{
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.banner-element>p{
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 48px;
+}
+
+.banner-element > .btn_primary{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 10px;
+}
+
+.btn_primary>.btn{
+    border: 0px;
+    padding: 16px 35px 16px 16px;
+    border-radius: 8px;
+    margin-left: 24px;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-weight: 400;  
+    
+}
+.btn_primary >.btn-scr{
+    color: #FFF;
+    background: #FF5400;
+}
+
+.btn-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_primary {
+    display: flex;
+    justify-content: center;
+}
+
+/* Banner section end */
+
+
+
+
+
+
+
+
+/* responsive banner  */
+@media only screen and (max-width: 600px) {
+    section {
+        margin: 100px 10px 24px 10px;
+    }
+
+    .banner-container {
+        height: 483px;
+    }
+    .banner-element>h3{
+        font-size: 22px;
+    }
+    .banner-element>p{
+        font-size: 14px;
+    }
+    .btn_primary{
+        flex-direction: column;
+        gap: 16px;
+        width: 287px;
+    }
+
+}
